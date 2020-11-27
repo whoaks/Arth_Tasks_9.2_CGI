@@ -1,0 +1,109 @@
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="eg1.css">
+	<style>
+</style>
+</head>
+<body style="background-color: #05386B;">
+	<a href="abc.html"><button>Back</button></a>
+      <h1 align = "center" style="color: white;" >Run Docker Command</h1>
+	<div  class="container" style="background-color: aqua; margin-bottom: 1rem;">
+		<header>
+                <div id="logo"><a href="#"><img  style= "display: block; padding-top: 1rem; padding-bottom: 1rem;  padding-left: 30%;" src="https://raw.githubusercontent.com/whoaks/aksfile/master/docker.JPG"></a></div>
+                <ul class="nav_menu">
+                        <li><a href="http://192.168.43.86/cgi-bin/docker_container.py">Container running</a></li>
+                        <li><a href="http://192.168.43.86/cgi-bin/web.py">Docker Images</a></li>
+                        <li><a href="http://192.168.43.86/cgi-bin/remove_con.py">Delete All Container</a></li>
+			<li><a href="http://192.168.43.86/cgi-bin/docker_info.py">Docker Info</a></li>
+			<li><a href="https://hub.docker.com/repository/docker/aks07/whoaks?ref=login">Docker Hub</a></li>
+                </ul>
+                <div class="clear"></div>
+        </header>
+
+	 <section id="mainbody" style="background-color: aqua;">
+		 <div id="welcomediv"><h2>Run Container</h2>
+                  </div>
+		 <div id="newsletter">
+                        <form action="http://192.168.43.86/cgi-bin/aks.py" method="post">
+                        <input placeholder="container-name" name="x">
+                        <br>
+                        <input placeholder="Image" name="y">
+                        <br><br>
+                        <input type="submit" name="submit">
+                </form>
+		 </div>
+		</section>
+	</div>
+	<br><br><div class="container" style="background-color: aqua;">
+		<section id="mainbody">
+                 <div id="welcomediv"><h2>Start Container</h2>
+                  </div>
+                 <div id="newsletter">
+			 <h4>Start Container</h4>
+                        <form action="http://192.168.43.86/cgi-bin/docker_start.py" method="post">
+                        <input placeholder="container-name" name="x">
+                        <br>
+                        <input type="submit" name="submit">
+                </form>
+                 </div>
+		</section></div>
+<br><br><div class="container" style="background-color: aqua;">
+		<section id="mainbody">
+                 <div id="welcomediv"><h2>Stop Container</h2>
+                  </div>
+                 <div id="newsletter">
+			 <h4>Stop Container</h4>
+                        <form action="http://192.168.43.86/cgi-bin/docker_stop.py" method="post">
+                        <input placeholder="container-name" name="x">
+                        <br>
+                        <input type="submit" name="submit">
+                </form>
+                 </div>
+                </section>
+</div>
+<br><br><div class="container" style="background-color: aqua;"> 
+		<section id="mainbody">
+                 <div id="welcomediv"><h2>Delete Container Running</h2>
+                  </div>
+                 <div id="newsletter">
+			 <h4>Delete Container</h4>
+                        <form action="http://192.168.43.86/cgi-bin/remove_scon.py" method="post">
+                        <input placeholder="container-name" name="x">
+                        <br>
+                        <input type="submit" name="submit">
+                </form>
+                 </div>
+                </section>
+</div>
+<br><br><div class="container" style="background-color: aqua;">
+		<section id="mainbody">
+                 <div id="welcomediv"><h2>Pull Image</h2>
+                  </div>
+                 <div id="newsletter">
+			 <h4>Pull Image</h4>
+			 <form action="http://192.168.43.86/cgi-bin/pull_image.py" method="post">
+                        <input placeholder="Image-name" name="x">
+                        <br>
+                        <input type="submit" name="submit">
+                </form>
+                 </div>
+                </section>
+</div>
+<br><br><div class="container" style="background-color: aqua;">
+		<section id="mainbody">
+                 <div id="welcomediv"><h2>Remove Image</h2>
+                  </div>
+                 <div id="newsletter">
+			 <h4>Remove Image</h4>
+			 <form action="http://192.168.43.86/cgi-bin/remove_image.py" method="post">
+                        <input placeholder="Image-name" name="x">
+                        <br>
+                        <input type="submit" name="submit">
+                </form>
+                 </div>
+                </section>
+
+	</div>
+
+</body>
+</html>

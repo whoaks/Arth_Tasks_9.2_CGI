@@ -1,0 +1,190 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="eg1.css">
+</head>
+<body style="background-color: #05386B;">
+	<a href="abc.html"><button>Back</button></a>
+      <h1 align="center" style="color: white;" >Configure AWS Cloud</h1>
+	<div  class="container" style="background-color: aqua; margin-bottom: 1rem;">
+		<header>
+                <div id="logo"><a href="#"><img  style= "height: 50%; width: 50%; padding-top: 1rem; padding-bottom: 1rem;  padding-left: 30%;" src="https://raw.githubusercontent.com/whoaks/Arth_Tasks_9.2_CGI/main/aws.JPG"></a></div>
+                <div class="clear"></div>
+        </header>
+
+	 <section id="mainbody" style="background-color: aqua;">
+		 <div id="welcomediv"><h2>Create/Delete Key Pair</h2>
+                  </div>
+                  <h4></h4>
+		 <div id="newsletter">
+                        <form action="http://192.168.43.17/cgi-bin/aks_cgi.py" method="post">
+                        <input placeholder="key-name" name="x">
+                        <button name="submit" value="create_key_pair">Create Key</button>
+                        <button name="submit" value="delete_key">Delete Key</button>
+                </form>
+		 </div>
+		</section>
+	</div>
+	<br><br><div class="container" style="background-color: aqua;">
+		<section id="mainbody">
+                 <div id="welcomediv"><h2>Create Security Group</h2>
+                  </div>
+                 <div id="newsletter">
+                     <h4></h4>
+                        <form action="http://192.168.43.17/cgi-bin/aks_cgi.py" method="post">
+                        <input placeholder="security-name" name="x">
+                        <input placeholder="vpc-id" name="y">
+                        <button name="submit" value="create_sg">Create Security Group</button>
+                </form>
+                 </div>
+		</section></div>
+<br><br>
+<div class="container" style="background-color: aqua;">
+		<section id="mainbody">
+                 <div id="welcomediv"><h2>Add Ingress Rules to SG</h2>
+                  </div>
+                 <div id="newsletter">
+                        <form action="http://192.168.43.17/cgi-bin/aks_cgi.py" method="post">
+                        <input placeholder="sg-id" name="x">
+                        <input placeholder="Protocol" name="y">
+                        <input placeholder="Port no" name="z">
+                        <input placeholder="CidrIP" name="x1">
+                        <br>
+                        <button name="submit" value="add_ingress_rule">Add Ingress rule </button>
+                </form>
+                 </div>
+                </section>
+</div>
+<br><br>
+<div class="container" style="background-color: aqua;"> 
+		<section id="mainbody">
+                 <div id="welcomediv"><h2>Launch EC2 Instance</h2>
+                  </div>
+                 <div id="newsletter_instance">
+                        <form action="http://192.168.43.17/cgi-bin/aks_cgi.py" method="post">
+                        <input placeholder="ami id" name="x">
+                        <input placeholder="instance type" name="y">
+                        <input placeholder="no of instance" name="z">
+                        <input placeholder="Security group id" name="x1">
+                        <input placeholder="key to attach to instance" name="x2">
+                        <br>
+                        <button name="submit" value="launch_ec2">launch EC2 </button>
+                </form>
+                 </div>
+                </section>
+</div>
+
+<br><br>
+<div class="container" style="background-color: aqua;">
+		<section id="mainbody">
+                 <div id="welcomediv"><h2>Create EBS Volume</h2>
+                  </div>
+                 <div id="newsletter">
+			 <h2></h2>
+			 <form action="http://192.168.43.17/cgi-bin/aks_cgi.py" method="post">
+                        <input placeholder="availability zone" name="x">
+                        <input placeholder="size of ebs volume" name="y">
+                        <br>
+                        <button name="submit" value="create_ebs">Create EBS volume</button>
+                </form>
+                 </div>
+                </section>
+</div>
+<br><br>
+<div class="container" style="background-color: aqua;">
+    <section id="mainbody">
+             <div id="welcomediv"><h2>Attach EBS Volume to EC2</h2>
+              </div>
+             <div id="newsletter">
+         <h4></h4>
+         <form action="http://192.168.43.17/cgi-bin/aks_cgi.py" method="post">
+                    <input placeholder="volume id" name="x">
+                    <input placeholder="ec2 id" name="y">
+                    <br>
+                    <button name="submit" value="attach_ebs">Attach EBS volume to EC2</button>
+            </form>
+             </div>
+            </section>
+</div>
+<br><br>
+<div class="container" style="background-color: #00ffff;">
+    <section id="mainbody">
+             <div id="welcomediv"><h2>Create/Delete S3 Bucket</h2>
+              </div>
+             <div id="newsletter">
+         <h4>Create/Delete S3 Bucket</h4>
+         <form action="http://192.168.43.17/cgi-bin/aks_cgi.py" method="post">
+                    <input placeholder="bucket name" name="x">
+                    <br>
+                    <button name="submit" value="create_s3">Create S3</button>
+                    <button name="submit" value="delete_s3">Delete S3</button>
+            </form>
+             </div>
+            </section>
+</div>
+<br><br>
+<div class="container" style="background-color: aqua;">
+    <section id="mainbody">
+             <div id="welcomediv"><h2>Put/Remove object inside/from S3 Bucket</h2>
+              </div>
+             <div id="newsletter">
+         <h4></h4>
+         <form action="http://192.168.43.17/cgi-bin/aks_cgi.py" method="post">
+                    <input placeholder="Object-name" name="x">
+                    <input placeholder="S3-name" name="y">
+                    <br>
+                    <button name="submit" value="put_object">Put object </button>
+                    <button name="submit" value="remove_object">Remove object </button>
+            </form>
+             </div>
+            </section>
+</div>
+<br><br>
+<div class="container" style="background-color: aqua;">
+		<section id="mainbody">
+                 <div id="welcomediv"><h2>Create Cloudfront</h2>
+                  </div>
+                 <div id="newsletter">
+			 <h4>Create CDN</h4>
+			 <form action="http://192.168.43.17/cgi-bin/aks_cgi.py" method="post">
+                        <input placeholder="S3-name" name="x">
+                        <br>
+                        <button name="submit" value="create_cdn">Create CDN</button>
+                </form>
+                 </div>
+                </section>
+</div>
+<br><br>
+<div class="container" style="background-color: aqua;">
+		<section id="mainbody">
+                 <div id="welcomediv"><h2>Delete Security Group</h2>
+                  </div>
+                 <div id="newsletter">
+			 <h4>Delete key pair</h4>
+			 <form action="http://192.168.43.17/cgi-bin/aks_cgi.py" method="post">
+                        <input placeholder="cg-id" name="x">
+                        <br>
+                        <button name="submit" value="delete_sg">Delete SG</button>
+                </form>
+                 </div>
+                </section>
+</div>
+<br><br>
+<div class="container" style="background-color: aqua;">
+    <section id="mainbody">
+             <div id="welcomediv"><h2>Stop/Start/Terminate Instance</h2>
+              </div>
+             <div id="newsletter">
+         <h4></h4>
+         <form action="http://192.168.43.17/cgi-bin/aks_cgi.py" method="post">
+                    <input placeholder="instance id" name="x">
+                    <br><br>
+                    <button name="submit" value="stop_instance">Stop Instance</button>
+                    <button name="submit" value="start_instance">Start Instance</button><br>
+                    <button name="submit" value="delete_instance">Terminate Instance</button>
+            </form>
+             </div>
+            </section>
+</div>
+
+</body>
+</html>

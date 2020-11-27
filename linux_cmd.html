@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+		<style>
+.menu li a:link ,
+.menu li a:visited
+{
+    background-color: #888888;
+    color:white;
+    display: block;
+    padding: 0.3em;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top:2rem ;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px 3px aqua;
+}
+.menu li a:hover {
+    background-color: red;
+    -webkit-transform: scale(2,2);
+    -ms-transform: scale(2,2);
+    transform: scale(2,2);
+}
+
+.nav_menu a {
+    display:block;
+    width: 80px;
+ }
+
+
+		</style>
+	</head>
+	<body>
+	<section class="text-gray-700 body-font">
+  <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
+    <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://raw.githubusercontent.com/whoaks/aksfile/master/linux.JPG">
+    <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Run Linux Command</h1>
+      <div class="flex w-full justify-center">
+	      <form action='http://192.168.43.86/cgi-bin/linux_cmd.py'>
+        <input name="x" class="border-0 bg-gray-100 rounded mr-4 border border-aqua focus:outline-none focus:border-indigo-500 text-base px-4 lg:w-full xl:w-1/2 w-2/4 md:w-full" placeholder="linux command" type="text">
+	<button class="inline-flex text-white bg-black b10 py-2 px-6 focus:outline-none hover:bg-red-600  rounded text-lg">Run</button>
+	      </form>
+      </div>
+       <ul class="menu">
+                    <li><a href="abc.html">Back to Previous Page</a></li>
+       </ul>
+    </div>
+  </div>
+</section>
+	</body>
+</html>

@@ -1,0 +1,88 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="eg1.css">
+</head>
+<body style="background-color: #05386B;">
+	<a href="abc.html"><button>Back</button></a>
+      <h1 align="center" style="color: white;" >Configure Hadoop and LVM </h1>
+	<div  class="container" style="background-color: aqua; margin-bottom: 1rem;">
+		<header>
+                <div id="logo"><a href="#"><img  style= "height: 50%; width: 50%; padding-top: 1rem; padding-bottom: 1rem;  padding-left: 30%;" src="https://raw.githubusercontent.com/whoaks/Arth_Tasks_9.2_CGI/main/hadoop.JPG"></a></div>
+                <div class="clear"></div>
+        </header>
+
+	 <section id="mainbody" style="background-color: aqua;">
+		 <div id="welcomediv"><h2>Configure and Start Namenode</h2>
+                  </div>
+                  <h4>Start Namenode</h4>
+		 <div id="newsletter">
+                        <form action="http://192.168.43.17/cgi-bin/aks_cgi.py" method="post">
+                        
+                        <button name="submit" value="start_namenode">Start Namenode</button>
+                </form>
+		 </div>
+		</section>
+	</div>
+	<br><br><div class="container" style="background-color: aqua;">
+		<section id="mainbody">
+                 <div id="welcomediv"><h2>Start Datanode</h2>
+                  </div>
+                 <div id="newsletter">
+                     <h4>Start Datanode</h4>
+                        <form action="http://192.168.43.148/cgi-bin/datanode.py" method="post">
+                        <button name="submit" value="start_datanode">Start DataNode</button>
+                </form>
+                 </div>
+		</section></div>
+<br><br>
+<div class="container" style="background-color: aqua;">
+		<section id="mainbody">
+                 <div id="welcomediv"><h2>Create Virtual Group</h2>
+                  </div>
+                 <div id="newsletter">
+                        <form action="http://192.168.43.17/cgi-bin/aks_cgi.py" method="post">
+                        <input placeholder="1st device name" name="x">
+                        <input placeholder="2nd device name" name="y">
+                        <input placeholder="vg name" name="z">
+                        <br>
+                        <button name="submit" value="create_vg">Create Virtual group</button>
+                </form>
+                 </div>
+                </section>
+</div>
+<br><br>
+<div class="container" style="background-color: aqua;">
+		<section id="mainbody">
+                 <div id="welcomediv"><h2>Create LVM</h2>
+                  </div>
+                 <div id="newsletter">
+                        <form action="http://192.168.43.17/cgi-bin/aks_cgi.py" method="post">
+                        <input placeholder="partition-size" name="x">
+                        <input placeholder="lv name" name="y">
+                        <input placeholder="vg name" name="z">
+                        <input placeholder="directory name to mount lv" name="x1">
+                        <br>
+                        <button name="submit" value="create_lvm">Create LVM</button>
+                </form>
+                 </div>
+                </section>
+</div>
+<br><br>
+<div class="container" style="background-color: aqua;">
+    <section id="mainbody">
+             <div id="welcomediv"><h2>Increase LVM Size dynamically</h2>
+              </div>
+             <div id="newsletter">
+         <h4></h4>
+         <form action="http://192.168.43.17/cgi-bin/aks_cgi.py" method="post">
+                    <input placeholder="enter size" name="x">
+                    <input placeholder="lvm name" name="y">
+                    <input placeholder="vg name" name="z">
+                    <br>
+                    <button name="submit" value="increase_lvm">Increase LVM Size</button>
+            </form>
+             </div>
+            </section>
+</div>
+</body>
+</html>
